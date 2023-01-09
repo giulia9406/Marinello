@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "413206917401",
+    "project_id": "marinello-34107",
+    "storage_bucket": "marinello-34107.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413206917401:android:5342e2594a5bdd0e0ad588",
+        "android_client_info": {
+          "package_name": "com.example.marinello"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413206917401-r01qgv9vor28shdfb3a815b2hosk1n29.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.marinello",
+            "certificate_hash": "cad5b023bb2fbde835035b62ee449123e00fc2b7"
+          }
+        },
+        {
+          "client_id": "413206917401-5njp4k5anarkaarml23c2aeusik0j8bn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_1Uo-QcyYZP-t-ZcVIY7t7X6UVVwA_Vw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413206917401-5njp4k5anarkaarml23c2aeusik0j8bn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

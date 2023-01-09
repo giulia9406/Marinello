@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarProductDetails"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/Theme.Marinello.PopupOverlay" />
+
+    <ImageView
+        android:id="@+id/product_image_details"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/toolbarProductDetails"
+        />
+    
+    <TextView
+        android:id="@+id/product_name_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_image_details"
+        android:text="Nome del prodotto"
+        android:textColor="@color/marrone"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/product_description_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name_details"
+        android:text="Descrizione del prodotto"
+        android:textColor="@color/marrone"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/poduct_price_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_description_details"
+        android:text="Prezzo del prodotto"
+        android:textColor="@color/marrone"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/number_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:layout_below="@+id/poduct_price_details"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        app:textSize="16dp"
+        app:backGroundColor="@color/marrone"
+        app:initialNumber="1"
+        app:finalNumber="10"
+
+
+        >
+
+    </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+    <Button
+        android:id="@+id/pd_add_to_cart_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/marrone"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:text="Aggiungi al carrello"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        />
+
+</RelativeLayout>

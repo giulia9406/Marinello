@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminCategoryActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAdminCategory"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/Theme.Marinello.PopupOverlay" />
+
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_below="@id/toolbarAdminCategory"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slogan_category"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp">
+
+
+        <ImageView
+            android:id="@+id/vino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icona_vino2"
+            />
+        <ImageView
+            android:id="@+id/olio"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/icona_olio"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/linear_category_layout"
+        >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="2"
+            android:columnCount="2"
+            android:layout_marginLeft="20dp"
+
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center_horizontal"
+            android:columnOrderPreserved="false">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/go_home_card"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/marrone"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+
+
+                android:clickable="true"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/home"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vai alla home"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textColor="#ffff"
+                        android:gravity="center_horizontal" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/modifica_prod_card"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/marrone"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="40dp"
+
+
+                android:clickable="true"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/modifica"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Modifica Prodotti"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:gravity="center_horizontal" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ordini_card"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/marrone"
+                android:layout_marginLeft="20dp"
+                android:layout_margin="5dp"
+                android:clickable="true"
+
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ship"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Verifica Ordini"
+                        android:textSize="16sp"
+                        android:textColor="#ffff"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/logout_card"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/marrone"
+                android:layout_marginLeft="40dp"
+                android:layout_margin="5dp"
+                android:clickable="true"
+
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/logout_white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Logout"
+                        android:textSize="16sp"
+                        android:textColor="#ffff"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
